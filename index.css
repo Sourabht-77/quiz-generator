@@ -1,0 +1,32 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Custom styles for quiz section */
+  #quiz-section {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for navigation buttons */
+  #question-nav div {
+    transition: background-color 0.3s ease;
+  }
+  
+  #question-nav div:hover {
+    background-color: #e2e8f0;
+  }
+  
+  /* Additional styles for mobile responsiveness */
+  @media (max-width: 768px) {
+    #quiz-section {
+      width: 95%;
+      padding: 15px;
+    }
+  }
+  

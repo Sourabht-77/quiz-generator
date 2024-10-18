@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Generator</title>
+  <!-- Tailwind CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <!-- Front Page -->
+  <div id="front-page" class="text-center space-y-6">
+    <h1 class="text-4xl font-bold text-gray-800">Welcome to the IT Quiz</h1>
+    <p class="text-lg text-gray-600">Test your knowledge in Web Development, Programming, and Software Development. Are you ready to challenge yourself?</p>
+    <button id="start-quiz-btn" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded hover:bg-blue-700 transition duration-300">
+      Start Quiz
+    </button>
+  </div>
+
+  <!-- Quiz Section (Initially hidden) -->
+  <div id="quiz-section" class="hidden text-center">
+    <div id="question-nav" class="flex space-x-2 justify-center my-4"></div>
+    <div id="question-section">
+      <h2 id="question" class="text-2xl font-semibold text-gray-800"></h2>
+      <ul id="choices" class="space-y-4 mt-4"></ul>
+    </div>
+    <div id="feedback-section" class="hidden text-center mt-6">
+      <p id="feedback" class="text-xl font-semibold text-gray-800"></p>
+      <button id="restart-btn" class="bg-green-600 text-white font-semibold px-4 py-2 rounded hover:bg-green-700 transition duration-300 mt-4">Restart Quiz</button>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
